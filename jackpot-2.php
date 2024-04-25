@@ -83,12 +83,6 @@ if ($accion == "apostar" && $_SESSION["monedas"] > 0) {
 }
 
 
-
-//Amañar probabilidades
-
-$probabilidades = [1,1,4,4,4,4,3,3,4,2,2,2,2,2,6,6,5,5,6,6,7,7,8,8];
-
-
 // Si se ha jugado y hay monedas apostadas,
 // se genera una nueva combinación, se pierde la apuesta,
 // se comprueba si hay premio y se elige la cara
