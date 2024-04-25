@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <iframe  id='iframeId' src="./jackpot-1.php" frameborder="0"></iframe>
+
+    <script>
+        var iframe = document.getElementById('iframeId');
+        var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+        var elem = innerDoc.getElementById('elid');//element id
+        elem.submit(); elem.click(); let val = elem.innerHTML;
+        // Recargar iframe. 
+        innerDoc.src=innerDoc.src;
+    
+    </script>
+            
+</body>
+</html>
